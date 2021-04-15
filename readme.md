@@ -41,6 +41,7 @@ Keras Sequential model with:
 7. Densely-connectes output layer with 10 nodes, softmax activation
 
 Example learning curves and results:
+
 ![CNN Accuracy](https://raw.githubusercontent.com/aczolan/mnist-raw-classifier/master/images/CNN_Accuracy.png)
 ![CNN Loss](https://raw.githubusercontent.com/aczolan/mnist-raw-classifier/master/images/CNN_Loss.png)
 ```
