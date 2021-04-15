@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import sys
 
 from keras.layers import Dense, Conv2D, Flatten, MaxPooling2D
 from keras.models import Sequential
@@ -72,7 +73,20 @@ def convert_features_to_4darray(features_2d):
 		ret_4d.append(sample_reshaped_3d)
 	return np.array(ret_4d)
 
-run_mode = 1
+run_mode = -1
+
+#Get command line argument
+#"NN" : run NN model
+#"CNN" : run CNN model
+error_message = 'Use "NN" or "CNN" command line argument.'
+if len(sys.argv) == 1:
+	sys.exit(error_message)
+elif sys.argv[1] == "NN":
+	run_mode = 0
+elif sys.argv[1] == "CNN":
+	run_mode = 1
+else:
+	sys.exit(error_message)
 
 batch_size = 5
 loss_function = MSE
