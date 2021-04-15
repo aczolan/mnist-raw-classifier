@@ -1,5 +1,5 @@
 # mnist-raw-classifier
-Machine learning classifier that classifies MNIST data using either a Neural Network (NN) or Convolutional Neural Network (CNN) model. Both models are implemented using Keras/Tensorflow and Scikit-learn packages.
+Machine learning classifier that classifies MNIST data using either a Neural Network (NN) or Convolutional Neural Network (CNN) model. Written for CS 7357 Neural Networks and Deep Learning. Both models are implemented using Keras/Tensorflow and Scikit-learn packages.
 
 ## Run
 ```
